@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
-  
-
 
 const API_URL = "https://www.omdbapi.com?apikey=8ae2c0bd";
 
@@ -12,13 +10,18 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const SearchMovies = async (title) => {
-    const response = await fetch(`${API_URL}&s=${title}`);
-    const data = await response.json();
+    try {
+      const response = await fetch(`${API_URL}&s=${title}`);
+      const data = await response.json();
 
-    if (data.Search) {
-      setMovies(data.Search);
-    } else {
-      setMovies([]);
+      if (data.Search) {
+        setMovies(data.Search);
+      } else {
+        setMovies([]);
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setMovies([]); // Optionally set an empty array on error
     }
   };
 
@@ -58,3 +61,4 @@ const App = () => {
 };
 
 export default App;
+
