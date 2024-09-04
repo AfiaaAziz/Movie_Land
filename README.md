@@ -51,35 +51,3 @@ To run this project locally:
 
 This project utilizes the [OMDB API](https://www.omdbapi.com/) to fetch movie data. An API key is required for access. For a more extensive usage, obtain your own API key from OMDB.
 
-## Contributing
-
-We welcome contributions to improve Movie Land! To contribute:
-
-1. **Fork the Repository**.
-2. **Create a New Branch**:
-    ```bash
-    git checkout -b feature/YourFeature
-    ```
-3. **Make Your Changes**.
-4. **Commit Your Changes**:
-    ```bash
-    git add .
-    git commit -m "Add your message here"
-    ```
-5. **Push to the Branch**:
-    ```bash
-    git push origin feature/YourFeature
-    ```
-6. **Open a Pull Request**.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or feedback, please reach out to [your-email@example.com](mailto:your-email@example.com).
-
----
-
-**Movie Land** is developed and maintained by [Your Name](https://github.com/your-github-username).
