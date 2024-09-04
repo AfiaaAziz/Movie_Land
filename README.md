@@ -3,7 +3,7 @@
 **Movie Land** is a React-based web application for searching movies and viewing their details using the OMDB API. This app provides a clean and user-friendly interface to explore various movies.
 
 
-![Uploading Movie-Land.png…]()
+![Movie Land Screenshot](https://github.com/your-repo/your-project/raw/branch-name/path-to-image/Movie-Land.png)
 
 
 ## Features
